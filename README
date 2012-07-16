@@ -1,0 +1,8 @@
+Automator is a web based job scheduling engine, which provides high level flexible features of scheduling and management of jobs in a real time basis. The system provides an extremely easy to use user­interface using which the user can configure jobs(tasks) by a graphical drag­drop of native tasks. The user can utilise the native tasks, and create a complex job, which is often the case in real business enterprise applications.
+Technology
+1. Adobe Flex
+2. Java Server Pages
+3. Core Java
+4. JavaMail API
+5. Tomcat Application Server
+6. db4o (API for OODB)
