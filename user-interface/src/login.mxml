@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" backgroundColor="white">
+	<mx:Panel x="375" width="416" height="306" layout="absolute" title="Login" horizontalAlign="center" verticalAlign="middle" color="#0B333C" y="70">
+		<mx:Label x="26" y="30" text="UserName"/>
+		<mx:Label x="26" y="80" text="PassWord"/>
+		<mx:TextInput x="155" y="28"/>
+		<mx:TextInput x="155" y="78"/>
+		<mx:Button x="172" y="196" label="Cancel"/>
+		<mx:Button x="259" y="196" label="Login"/>
+		<mx:PopUpMenuButton x="36" y="196" label="Branch" width="106"  dataProvider="{dp}" labelField="@label" showRoot="false"/>
+		
+	</mx:Panel>
+	<mx:XML format="e4x" id="dp"> 
+        <root>
+            <editItem label="Delhi"/> 
+            <editItem label="Bangalore"/>
+            <editItem label="London"/> 
+        </root>
+    </mx:XML>
+</mx:Application>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" backgroundColor="white">
+	<mx:Panel x="338" y="69" width="735" height="474" layout="absolute" title="UserLogin" backgroundColor="white">
+		<mx:PopUpMenuButton x="181.5" y="20" label="Jobs" width="79" dataProvider="{dp1}" labelField="@label" showRoot="false"/>
+		<mx:PopUpMenuButton x="273.5" y="20" label="Statistics" width="86" dataProvider="{dp2}" labelField="@label" showRoot="false"/>
+		<mx:PopUpMenuButton x="379.5" y="20" label="Configure" dataProvider="{dp3}" labelField="@label" showRoot="false"/>
+		<mx:Button x="482.5" y="20" label="Help"/>
+		<mx:Panel x="97.5" y="91" width="500" height="311" layout="absolute">
+		</mx:Panel>
+		<mx:HRule x="0" y="50" height="12" width="715"/>
+	</mx:Panel>
+	
+	<mx:XML format="e4x" id="dp1"> 
+        <root>
+            <editItem label="Create"/> 
+            <editItem label="Edit"/> 
+        </root>
+    </mx:XML>
+    
+    <mx:XML format="e4x" id="dp2"> 
+        <root>
+            <editItem label="View Status"/> 
+            <editItem label="Monitor Job"/> 
+        </root>
+    </mx:XML>
+    
+    <mx:XML format="e4x" id="dp3"> 
+        <root>
+            <editItem label="Holidays"/> 
+            <editItem label="Sheduling Job Queues"/> 
+        </root>
+    </mx:XML>
+    
+    
+
+	
+	
+
+</mx:Application>

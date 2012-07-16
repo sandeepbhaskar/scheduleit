@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" backgroundColor="white" layout="absolute" horizontalAlign="center" verticalAlign="middle">
+	<mx:Panel x="314.5" y="20" width="570" height="430" layout="absolute" title="Configure Holidays">
+		<mx:DateChooser x="14" y="121"/>
+		<mx:Button x="14" y="309" label="Add"/>
+		<mx:HRule x="0" y="48" height="15" width="550"/>
+		<mx:PopUpMenuButton x="159.25" y="18" label="Statistics" width="86" dataProvider="{dp2}" labelField="@label" showRoot="false"/>
+		<mx:PopUpMenuButton x="262.25" y="18" label="Configure" dataProvider="{dp3}" labelField="@label" showRoot="false"/>
+		<mx:Button x="368.25" y="18" label="Help"/>
+		<mx:PopUpMenuButton x="59.75" y="18" label="Jobs" width="79" dataProvider="{dp1}" labelField="@label" showRoot="false"/>
+		<mx:DataGrid x="262" y="121" width="245" height="180">
+			
+			<mx:ArrayCollection>
+         <mx:Object>
+            <mx:Date>26th Jan</mx:Date>
+            <mx:Description>Republic Day</mx:Description>
+         </mx:Object>
+         
+         <mx:Object>
+            <mx:Date>11th March</mx:Date>
+            <mx:Description>This is Holi</mx:Description>
+         </mx:Object>
+         
+         <mx:Object>
+            <mx:Date>15th Aug</mx:Date>
+            <mx:Description>Independence Day</mx:Description>
+         </mx:Object>
+         
+         
+</mx:ArrayCollection>
+		</mx:DataGrid>
+		<mx:Button x="262" y="309" label="Remove" width="72"/>
+	</mx:Panel>
+	<mx:XML format="e4x" id="dp1"> 
+        <root>
+            <editItem label="Create"/> 
+            <editItem label="Edit"/> 
+        </root>
+    </mx:XML>
+    
+    <mx:XML format="e4x" id="dp2"> 
+        <root>
+            <editItem label="View Status"/> 
+            <editItem label="Monitor Job"/> 
+        </root>
+    </mx:XML>
+    
+    <mx:XML format="e4x" id="dp3"> 
+        <root>
+            <editItem label="Holidays"/> 
+            <editItem label="Sheduling Job Queues"/> 
+        </root>
+    </mx:XML>
+
+</mx:Application>
